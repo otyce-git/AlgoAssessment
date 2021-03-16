@@ -27,8 +27,8 @@ namespace TGS.Challenge
     {
       public bool AreAnagrams(string word1, string word2)
       {
-            word1 = Regex.Replace(word1.ToLower(), "[^\\w\\.]", "");
-            word2 = Regex.Replace(word2.ToLower(), "[^\\w\\.]", "");
+            word1 = Regex.Replace(word1.ToLower(), @"[\W_-[\s]]+", string.Empty);
+            word2 = Regex.Replace(word2.ToLower(), @"[\W_-[\s]]+", string.Empty);
 
             if (word1.Length != word2.Length)
                 return false;
