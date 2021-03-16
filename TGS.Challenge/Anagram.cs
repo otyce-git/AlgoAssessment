@@ -28,6 +28,12 @@ namespace TGS.Challenge
     {
       public bool AreAnagrams(string word1, string word2)
       {
+            if (string.IsNullOrEmpty(word1))
+                throw new ArgumentException();
+
+            if (string.IsNullOrEmpty(word2))
+                throw new ArgumentException();
+
             word1 = Regex.Replace(word1.ToLower(), @"[\W_-[\s]]+", string.Empty);
             word2 = Regex.Replace(word2.ToLower(), @"[\W_-[\s]]+", string.Empty);
 
