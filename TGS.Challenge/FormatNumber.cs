@@ -26,7 +26,22 @@ namespace TGS.Challenge
     {
         public string Format(int value)
         {
-            return string.Empty;
+            var stringValue = value.ToString();
+            var formattedString = string.Empty;
+            var count = 0;
+
+            for (int i = stringValue.Length; i > 0; i--)
+            {
+                count++;
+
+                formattedString = stringValue[i - 1] + formattedString;
+                if ((count%3 == 0) && (stringValue.Length > count))
+                {
+                    formattedString = "," + formattedString;
+                }
+            }
+
+            return formattedString;
         }
     }
 }

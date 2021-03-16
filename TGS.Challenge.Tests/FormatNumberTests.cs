@@ -42,7 +42,7 @@ namespace TGS.Challenge.Tests
     [Fact]
     public void Value_100_Returns_ValidString()
     {
-      var formatted = _formatNumber.Format(1);
+      var formatted = _formatNumber.Format(100);
 
       Assert.Equal("1,00", formatted);
     }
