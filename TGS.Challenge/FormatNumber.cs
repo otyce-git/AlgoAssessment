@@ -26,6 +26,9 @@ namespace TGS.Challenge
     {
         public string Format(int value)
         {
+            if (value > 1000000000 || value < 0)
+                throw new ArgumentOutOfRangeException();
+            
             var stringValue = value.ToString();
             var formattedString = string.Empty;
             var count = 0;
