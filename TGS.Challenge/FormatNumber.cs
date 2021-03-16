@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace TGS.Challenge
 {
@@ -30,7 +31,7 @@ namespace TGS.Challenge
                 throw new ArgumentOutOfRangeException();
             
             var stringValue = value.ToString();
-            var formattedString = string.Empty;
+            var formattedString =  string.Empty;
             var count = 0;
 
             for (int i = stringValue.Length; i > 0; i--)
