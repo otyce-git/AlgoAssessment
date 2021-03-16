@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Text.RegularExpressions;
 
 namespace TGS.Challenge
@@ -31,6 +32,24 @@ namespace TGS.Challenge
 
             if (word1.Length != word2.Length)
                 return false;
+
+            var word1ArrayList = new ArrayList();
+            for (int i = 0; i < word1.Length; i++)
+            {
+                word1ArrayList.Add(word1[i]);
+            }
+
+            var word2ArrayList = new ArrayList();
+            for (int i = 0; i < word2.Length; i++)
+            {
+                word2ArrayList.Add(word2[i]);
+            }
+
+            word1ArrayList.Sort();
+            word2ArrayList.Sort();
+
+            
+
 
 
             return false;
