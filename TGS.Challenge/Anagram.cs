@@ -48,11 +48,13 @@ namespace TGS.Challenge
             word1ArrayList.Sort();
             word2ArrayList.Sort();
 
-            
+            for (int i = 0; i < word1ArrayList.Count; i++)
+            {
+                if (!word1ArrayList[i].Equals(word2ArrayList[i]))
+                    return false;
+            }
 
-
-
-            return false;
+            return true;
       }
     }
 }
