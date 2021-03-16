@@ -23,7 +23,7 @@ namespace TGS.Challenge.Tests
     {
       var count = _vowelCount.Count("AEIOU");
 
-      Assert.Equal(count, 6);
+      Assert.Equal(count, 5);
     }
 
     [Fact]
