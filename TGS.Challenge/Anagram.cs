@@ -29,6 +29,10 @@ namespace TGS.Challenge
             word1 = Regex.Replace(word1.ToLower(), "[^\\w\\.]", "");
             word2 = Regex.Replace(word2.ToLower(), "[^\\w\\.]", "");
 
+            if (word1.Length != word2.Length)
+                return false;
+
+
             return false;
       }
     }
