@@ -50,7 +50,7 @@ namespace TGS.Challenge.Tests
     [Fact]
     public void Value_1000_Returns_ValidString()
     {
-      var formatted = _formatNumber.Format(1);
+      var formatted = _formatNumber.Format(1000);
 
       Assert.Equal("1,000", formatted);
     }
