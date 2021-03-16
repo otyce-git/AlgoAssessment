@@ -37,7 +37,7 @@ namespace TGS.Challenge.Tests
     [Fact]
     public void abcdefghijklmnopqrstuvwxyz_Returns_Correct_Count()
     {
-      var count = _vowelCount.Count("lmnpqr");
+      var count = _vowelCount.Count("abcdefghijklmnopqrstuvwxyz");
 
       Assert.Equal(count, 5);
     }
