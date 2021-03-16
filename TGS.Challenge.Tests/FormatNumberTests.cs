@@ -34,7 +34,7 @@ namespace TGS.Challenge.Tests
     [Fact]
     public void Value_10_Returns_ValidString()
     {
-      var formatted = _formatNumber.Format(1);
+      var formatted = _formatNumber.Format(10);
 
       Assert.Equal("10", formatted);
     }
