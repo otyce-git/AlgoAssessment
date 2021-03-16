@@ -16,6 +16,9 @@ namespace TGS.Challenge
     {
         public int Count(string value)
         {
+            if (string.IsNullOrEmpty(value))
+                throw new ArgumentException();
+
             value = value.ToLower();
             int vowelCount = 0;
 
