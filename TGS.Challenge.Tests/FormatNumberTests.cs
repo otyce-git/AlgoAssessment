@@ -66,7 +66,7 @@ namespace TGS.Challenge.Tests
     [Fact]
     public void Value_100000_Returns_ValidString()
     {
-      var formatted = _formatNumber.Format(1);
+      var formatted = _formatNumber.Format(100000);
 
       Assert.Equal("100,000", formatted);
     }
