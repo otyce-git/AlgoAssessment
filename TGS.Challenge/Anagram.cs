@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace TGS.Challenge
 {
   /*
@@ -24,7 +26,10 @@ namespace TGS.Challenge
     {
       public bool AreAnagrams(string word1, string word2)
       {
-        return false;
+            word1 = Regex.Replace(word1.ToLower(), "[^\\w\\.]", "");
+            word2 = Regex.Replace(word2.ToLower(), "[^\\w\\.]", "");
+
+            return false;
       }
     }
 }
