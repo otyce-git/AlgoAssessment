@@ -40,7 +40,6 @@ namespace TGS.Challenge
             word1 = word1.Replace(" ", "");
             word2 = word2.Replace(" ", "");
 
-
             if (word1.Length != word2.Length)
                 return false;
 
