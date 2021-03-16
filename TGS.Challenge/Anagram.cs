@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Text.RegularExpressions;
 
@@ -29,6 +30,10 @@ namespace TGS.Challenge
       {
             word1 = Regex.Replace(word1.ToLower(), @"[\W_-[\s]]+", string.Empty);
             word2 = Regex.Replace(word2.ToLower(), @"[\W_-[\s]]+", string.Empty);
+
+            word1 = word1.Replace(" ", "");
+            word2 = word2.Replace(" ", "");
+
 
             if (word1.Length != word2.Length)
                 return false;
