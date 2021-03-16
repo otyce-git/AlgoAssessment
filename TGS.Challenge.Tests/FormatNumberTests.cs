@@ -44,7 +44,7 @@ namespace TGS.Challenge.Tests
     {
       var formatted = _formatNumber.Format(100);
 
-      Assert.Equal("1,00", formatted);
+      Assert.Equal("100", formatted);
     }
 
     [Fact]
