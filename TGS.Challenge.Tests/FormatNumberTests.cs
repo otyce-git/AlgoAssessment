@@ -82,7 +82,7 @@ namespace TGS.Challenge.Tests
     [Fact]
     public void Value_35235235_Returns_ValidString()
     {
-      var formatted = _formatNumber.Format(1);
+      var formatted = _formatNumber.Format(35235235);
 
       Assert.Equal("35,2352,35", formatted);
     }
